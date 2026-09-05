@@ -1,0 +1,10 @@
+name: Prepare bounded Rivet issue context
+description: Freeze one issue event and its bounded App-owned triage history
+outputs:
+  eligible:
+    description: Whether this event may run issue triage
+  snapshot:
+    description: Complete bounded JSON issue context
+runs:
+  using: node24
+  main: index.mjs

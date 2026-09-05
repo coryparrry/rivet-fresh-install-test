@@ -1,0 +1,21 @@
+name: Rivet authority receipt
+description: Records the trusted workflow identity used by a Rivet agent run.
+inputs:
+  workflow-id:
+    description: Rivet workflow identifier.
+    required: true
+  compiler-version:
+    description: Pinned gh-aw compiler version.
+    required: true
+  workflow-ref:
+    description: Fully qualified GitHub workflow ref.
+    required: true
+  workflow-sha:
+    description: Commit containing the running workflow.
+    required: true
+outputs:
+  receipt:
+    description: Canonical JSON authority receipt.
+runs:
+  using: node24
+  main: index.mjs
