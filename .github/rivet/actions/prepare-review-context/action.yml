@@ -1,0 +1,8 @@
+name: Prepare bounded Rivet review context
+description: Fetch one exact pull request comparison within a fixed byte budget
+outputs:
+  snapshot:
+    description: Complete bounded JSON comparison
+runs:
+  using: node24
+  main: index.mjs

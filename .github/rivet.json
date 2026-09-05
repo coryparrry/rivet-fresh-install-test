@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 4,
+  "review": {
+    "automatic": true,
+    "inlineFindings": true,
+    "requestChanges": false,
+    "maximumFindings": 8
+  },
+  "repair": {
+    "authority": "never"
+  },
+  "issues": {
+    "triage": "automatic",
+    "implementation": "disabled"
+  },
+  "maintenance": {
+    "mode": "disabled"
+  },
+  "merge": {
+    "authority": "never"
+  },
+  "models": {
+    "review": {
+      "engine": "codex",
+      "model": "gpt-5.6-luna",
+      "effort": "default"
+    }
+  }
+}

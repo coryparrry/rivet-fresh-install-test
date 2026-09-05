@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "product": "Rivet",
+  "mode": "review",
+  "configSchemaVersion": 4,
+  "productAuthority": [
+    "Review runs automatically for pull request events.",
+    "Review may publish up to 8 inline findings.",
+    "Review may comment but cannot request changes.",
+    "Repair is disabled.",
+    "Issue triage is automatic.",
+    "Issue implementation is disabled.",
+    "Maintenance is disabled.",
+    "Merge is impossible."
+  ],
+  "githubApp": {
+    "clientIdVariable": "RIVET_APP_CLIENT_ID",
+    "privateKeySecret": "RIVET_APP_PRIVATE_KEY",
+    "permissions": {
+      "contents": "read",
+      "metadata": "read",
+      "pullRequests": "write",
+      "issues": "write"
+    },
+    "events": []
+  },
+  "compiler": {
+    "version": "0.86.2",
+    "commit": "48e5fa3ff52294d91d97715017a9f8693a48387f",
+    "actionsCommit": "6aab9e5b5c91c615506061f09bedd81a23babe3c"
+  },
+  "managedFiles": [
+    ".github/rivet.json",
+    ".github/rivet/actions/authority-receipt/action.yml",
+    ".github/rivet/actions/authority-receipt/index.mjs",
+    ".github/rivet/actions/prepare-issue-context/action.yml",
+    ".github/rivet/actions/prepare-issue-context/index.mjs",
+    ".github/rivet/actions/prepare-review-context/action.yml",
+    ".github/rivet/actions/prepare-review-context/index.mjs",
+    ".github/rivet/agents/issue-triager.md",
+    ".github/rivet/agents/pr-reviewer.md",
+    ".github/rivet/aw/review-extension.md",
+    ".github/rivet/installation.json",
+    ".github/workflows/rivet-issue-triage.lock.yml",
+    ".github/workflows/rivet-issue-triage.md",
+    ".github/workflows/rivet-review.lock.yml",
+    ".github/workflows/rivet-review.md"
+  ]
+}
